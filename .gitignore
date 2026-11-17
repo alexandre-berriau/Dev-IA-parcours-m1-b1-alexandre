@@ -7,3 +7,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Modeles de mesure regeneres par le notebook 04
+model/mesure_*.joblib
