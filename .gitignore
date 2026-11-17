@@ -1,0 +1,9 @@
+# Identifiants de la base locale
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
