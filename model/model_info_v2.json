@@ -1,0 +1,77 @@
+{
+  "model_name": "cancellation_model",
+  "version": "2.0.0",
+  "trained_on": "2026-11-18",
+  "scikit_learn_version": "1.6.1",
+  "features": [
+    "arrival_date",
+    "hotel",
+    "arrival_date_month",
+    "market_segment",
+    "deposit_type",
+    "customer_type",
+    "country",
+    "meal",
+    "distribution_channel",
+    "reserved_room_type",
+    "lead_time",
+    "stays_in_weekend_nights",
+    "stays_in_week_nights",
+    "adults",
+    "children",
+    "babies",
+    "adr",
+    "previous_cancellations",
+    "previous_bookings_not_canceled",
+    "total_of_special_requests",
+    "required_car_parking_spaces",
+    "is_repeated_guest",
+    "days_in_waiting_list"
+  ],
+  "target": "is_canceled",
+  "train_period": [
+    "2015-07-01 00:00:00",
+    "2016-08-31 00:00:00"
+  ],
+  "test_period": [
+    "2016-09-01 00:00:00",
+    "2016-12-31 00:00:00"
+  ],
+  "hyperparameters": {
+    "classifier__bootstrap": true,
+    "classifier__ccp_alpha": 0.0,
+    "classifier__class_weight": null,
+    "classifier__criterion": "gini",
+    "classifier__max_depth": null,
+    "classifier__max_features": 0.7,
+    "classifier__max_leaf_nodes": null,
+    "classifier__max_samples": null,
+    "classifier__min_impurity_decrease": 0.0,
+    "classifier__min_samples_leaf": 100,
+    "classifier__min_samples_split": 2,
+    "classifier__min_weight_fraction_leaf": 0.0,
+    "classifier__monotonic_cst": null,
+    "classifier__n_estimators": 200,
+    "classifier__n_jobs": -1,
+    "classifier__oob_score": false,
+    "classifier__random_state": 42,
+    "classifier__verbose": 0,
+    "classifier__warm_start": false
+  },
+  "test_metrics": {
+    "threshold": 0.3,
+    "f1": 0.7297,
+    "precision": 0.815,
+    "recall": 0.6605,
+    "accuracy": 0.8139,
+    "roc_auc": 0.8797,
+    "confusion_matrix": {
+      "vrais_negatifs": 11206,
+      "fausses_alertes": 1135,
+      "annulations_ratees": 2570,
+      "vrais_positifs": 5000
+    }
+  },
+  "training_seconds": 1.8,
+  "model_size_mb": 6.39
+}

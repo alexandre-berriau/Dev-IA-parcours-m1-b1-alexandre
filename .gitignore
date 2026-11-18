@@ -10,3 +10,6 @@ __pycache__/
 
 # Modeles de mesure regeneres par le notebook 04
 model/mesure_*.joblib
+
+# Environnement virtuel local
+.venv/
